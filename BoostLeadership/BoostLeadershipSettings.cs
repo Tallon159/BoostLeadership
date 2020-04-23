@@ -16,7 +16,7 @@ namespace BoostLeadership
         public override string ModName => "BoostLeadership";
 
         [XmlElement]
-        [SettingProperty("Morale Threshold",65.0f,75.0f,"Change the morale threshold to gain leadership skill (default 75.0)")]
+        [SettingProperty("Morale Threshold",55.0f,75.0f,"Change the morale threshold to gain leadership skill (default 75.0)")]
         public float MoraleThreshold { get; set; } = 75.0f;
 
         [XmlElement]
