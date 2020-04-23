@@ -1,9 +1,6 @@
 ﻿using HarmonyLib;
-using ModLib;
 using System;
-using System.Windows;
 using System.Reflection;
-using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 
 namespace BoostLeadership
@@ -20,10 +17,6 @@ namespace BoostLeadership
                 FileLog.Reset();
                 Harmony harmony1 = new Harmony("mod.bannerlord.boostleadership");
                 harmony1.PatchAll(Assembly.GetExecutingAssembly());
-                FileDatabase.Initialise("BoostLeadership");
-                BoostLeadershipSettings settings = FileDatabase.Get<BoostLeadershipSettings>(BoostLeadershipSettings.InstanceID);
-                if (settings == null) settings = new BoostLeadershipSettings();
-                SettingsDatabase.RegisterSettings(settings);
             }
             catch (Exception ex)
             {
