@@ -9,7 +9,7 @@ namespace BoostLeadership
     [HarmonyPatch(typeof(MobilePartyTrainingBehavior), "DailyTickParty")]
     public class BoostLeadershipPatcher
     {
-        public const float MoraleThreshold = 65f;
+        public const float MoraleThreshold = 65;
         private static bool Prefix(MobileParty mobileParty)
         {
             if(mobileParty.LeaderHero == null || mobileParty.Morale <= MoraleThreshold)

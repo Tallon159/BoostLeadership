@@ -1,16 +1,18 @@
- <Module>
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
      <Name value="Boost Leadership"/>
      <Id value="BoostLeadership"/>
      <Version value="v1.0.3"/>
      <SingleplayerModule value="true"/>
      <MultiplayerModule value="false"/>
+      <Official value="false"/>
      <DependedModules>
          <DependedModule Id="Native"/>
          <DependedModule Id="SandBoxCore"/>
          <DependedModule Id="Sandbox"/>
          <DependedModule Id="CustomBattle"/>
          <DependedModule Id="StoryMode" />
-         <DependedModule Id="ModLib" />
+         <DependedModule Id="Bannerlord.Harmony"/>
      </DependedModules>
      <SubModules>
          <SubModule>
@@ -23,5 +25,4 @@
              </Tags>
          </SubModule>
      </SubModules>
-     <Xmls/>
  </Module>
